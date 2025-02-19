@@ -1,0 +1,53 @@
+/* colors */
+:root {
+  --bg: #000;
+  --tab-bg: #f9f9f9;
+  --f-color: #ba9872;
+  --s-color: #967b5c;
+  --t-color: #a38564;
+  --fo-color: #f9f9f9;
+  --fi-color: #e2e2e2;
+}
+
+/* general styles */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  background-color: var(--bg);
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-height: 50px) {
+  body {
+    margin: 25% 0 25% 0 25%;
+  }
+}
+
+/* styles */
+.envelop {
+  width: 15rem;
+  height: 10rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+@media (min-width: 400px) and (max-width: 600px) {
+  .envelop {
+    width: 20rem;
+    /* height não foi definido */
+  }
+}
